@@ -1,8 +1,6 @@
 # kilo-code
 
-## 4.95.1
-
-### Patch Changes
+## [v4.95.1]
 
 - [#2458](https://github.com/Kilo-Org/kilocode/pull/2458) [`6a79d3b`](https://github.com/Kilo-Org/kilocode/commit/6a79d3b640f8c7e3f24e54bcf17ce63127fbce57) Thanks [@NaccOll](https://github.com/NaccOll)! - Fix Highlight is on the wrong places when referencing context
 
