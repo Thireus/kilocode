@@ -1,6 +1,6 @@
 import * as vscode from "vscode"
 
-export class GhostCursorAnimation {
+export class GhostGutterAnimation {
 	private state: "hide" | "wait" | "active" = "hide"
 	private decorationWait: vscode.TextEditorDecorationType
 	private decorationActive: vscode.TextEditorDecorationType

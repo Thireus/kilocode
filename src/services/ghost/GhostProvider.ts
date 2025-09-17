@@ -18,7 +18,7 @@ import { ProviderSettingsManager } from "../../core/config/ProviderSettingsManag
 import { GhostContext } from "./GhostContext"
 import { TelemetryService } from "@roo-code/telemetry"
 import { ClineProvider } from "../../core/webview/ClineProvider"
-import { GhostCursorAnimation } from "./GhostCursorAnimation"
+import { GhostGutterAnimation } from "./GhostGutterAnimation"
 import { GhostCursor } from "./GhostCursor"
 
 export class GhostProvider {
@@ -35,7 +35,7 @@ export class GhostProvider {
 	private settings: GhostServiceSettings | null = null
 	private ghostContext: GhostContext
 	private cursor: GhostCursor
-	private cursorAnimation: GhostCursorAnimation
+	private cursorAnimation: GhostGutterAnimation
 
 	private enabled: boolean = true
 	private taskId: string | null = null
@@ -68,7 +68,7 @@ export class GhostProvider {
 		this.model = new GhostModel()
 		this.ghostContext = new GhostContext(this.documentStore)
 		this.cursor = new GhostCursor()
-		this.cursorAnimation = new GhostCursorAnimation(context)
+		this.cursorAnimation = new GhostGutterAnimation(context)
 
 		// Register the providers
 		this.codeActionProvider = new GhostCodeActionProvider()
