@@ -59,4 +59,12 @@ export class GhostCursorAnimation {
 		this.state = "hide"
 		this.update()
 	}
+
+	public dispose() {
+		const editor = vscode.window.activeTextEditor
+		editor?.setDecorations(this.decorationActive, [])
+		editor?.setDecorations(this.decorationWait, [])
+		this.decorationWait.dispose()
+		this.decorationActive.dispose()
+	}
 }
